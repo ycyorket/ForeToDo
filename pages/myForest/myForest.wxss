@@ -1,0 +1,101 @@
+.search{
+  width: 100%;
+  height: 11.5vh;
+  background-color: #7a7;
+  display: flex;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.search-bar{
+  margin: 2vw;
+  height: 70%;
+  width: 100%;
+}
+
+#searchBar{
+  background-color: #7a7;
+}
+
+.todolist{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  margin: 1.2vh 0;
+  background-color: #cefcc9;
+  width: 100%;
+  height: 17vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.item view{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-editing-logo{
+  width: 15%;
+}
+
+.item-iscomplete{
+  width: 15%;
+}
+
+.standard-image{
+  height: 100%;
+  width: 100%;
+}
+
+.item-time{
+  width: 46%;
+  /*background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.item-time-navi{
+  font-size: 3.5vh;
+  font-weight: bold;
+  position: relative;
+  left: 0.5vh;
+}
+
+.item-time-date{
+  font-size: 2.5vh;
+  position: relative;
+  left: 5vh;
+}
+
+.item-title{
+  width: 24%;
+  text-indent: 0.5rem;
+  /*background-color: blue;*/
+  position: relative;
+  top: 4vh;
+  font-size: 3vh;
+}
+
+.add-item{
+  height: 10vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.add-item-navi{
+  width: 60%;
+  height: 100%;
+  text-align: right;
+  /*background-color: white;*/
+  line-height: 10vw;
+}
+
+.add-item-logo{
+  width: 10%;
+  height: 100%;
+  float: left;
+  /*background-color: grey;*/
+}

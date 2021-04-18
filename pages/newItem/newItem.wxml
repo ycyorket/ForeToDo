@@ -1,0 +1,62 @@
+<!--pages/newlist/newlist.wxml-->
+
+<form class='newlist' bindsubmit="formSubmit" bindreset="formReset">
+  <view class='inputarea'>
+    <view class='newcontent'>内容：</view>
+    <view class='contentarea'>
+      <input placeholder='请输入备忘内容'></input>
+      <text>\n</text>
+    </view>
+
+    <view class='newddl'>ddl：</view>
+    <view class='ddlarea'>
+      <view class="ddlatime">
+        <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+          <view class="timepicker1">
+            时间 : {{times}}
+          </view>
+        </picker>
+      </view>
+      <view class="ddladate">
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">
+          <view class="datepicker1">
+            日期: {{dates}}
+          </view>
+        </picker>
+        <text>\n</text>
+      </view>
+    </view>
+
+    <view class='newspot'>地点：</view>
+    <view class='spotarea'>
+      <input placeholder='请输入地点'></input>
+      <text>\n</text>
+    </view>
+
+    <view class='newreminding'>提醒时间：</view>
+    <view class='remindingarea'>
+      <view class="rmatime">
+        <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+          <view class="timepicker2">
+            时间 : {{times}}
+          </view>
+        </picker>
+      </view>
+      <view class="rmadate">
+        <picker mode="date" value="{{date}}" start="1978-01-01" end="2017-1-23" bindchange="bindDateChange">
+          <view class="datepicker2">
+            日期: {{dates}}
+          </view>
+        </picker>
+        <text>\n</text>
+      </view>
+    </view>
+    <text>\n</text>
+  </view>
+
+  <view class='btnarea'>
+    <button class='newreturn' catchtap='go'>返回</button>
+    <button class='newcomplete' form-type='submit'>完成</button>
+    <button class='newreset' form-type='reset'>重置</button>
+  </view>
+</form>

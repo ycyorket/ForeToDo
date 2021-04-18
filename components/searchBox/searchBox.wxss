@@ -1,0 +1,43 @@
+/* components/searchBox/searchBox.wxss */
+.search-box{
+  width: calc( 100% - 64rpx );
+  background-color: #7a7;
+  height: 60rpx;
+  padding: 20rpx 32rpx;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.search-box-bar{
+    width: calc( 100% - 32rpx );
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    border-radius: 30rpx;
+    background: #F5F5F5;
+    padding-left: 32rpx;
+}
+
+/*开始搜索时*/
+.search-box-bar.search-box-bar-searching{
+  width: calc( 100% - 102rpx );
+}
+
+.search-box-bar icon{
+  margin-right: 20rpx;
+}
+
+.search-box-bar input{
+  height:60rpx;
+  line-height:60rpx;
+  font-size:28rpx;
+  width:100%;
+  margin-right:32rpx;
+}
+
+.search-box-button{
+  font-size: 28rpx;
+  width: 70rpx;
+  text-align: right;
+}

@@ -1,0 +1,13 @@
+<!--components/searchBox/searchBox.wxml-->
+
+<view>
+  <slot></slot>
+  <view class='search-box'>
+    <view class="search-box-bar {{isToSearch?'search-box-bar-searching':''}}">
+      <icon type='search' size="32rpx"></icon>
+      <input type="text" bindinput="input" bindconfirm="search" bindfocus='getFocus' bindblur='blurFocus' confirm-type='search' value='{{searchStr}}' placeholder='请输入搜索内容'/>
+      <icon bindtap='clear' wx:if="{{isToSearch}}" type='clear' size="28rpx"></icon>
+    </view>
+    <view bindtap='handle' class="search-box-button">{{buttonStr}}</view>
+  </view>
+</view>

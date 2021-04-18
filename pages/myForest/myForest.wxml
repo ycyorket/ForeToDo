@@ -1,0 +1,41 @@
+<view class="content-container">
+  <view class="search">
+    <view class="search-bar">
+      <searchBar id="searchBar" searchStr="{{searchStr}}" bind:input="input" bind:search="search" bind:handle="handle" bind:clear="clear" bind:blurFocus="blurFocus" buttonStr='{{buttonStr}}'></searchBar>
+    </view>
+  </view>
+
+  <view class="todolist">
+    <view class="item" wx:for="{{toDoList}}">
+      <view class="item-editing-logo" catchtap="editContent" data-value="{{item.index}}">
+        <image class="standard-image" wx:if="{{item.isComplete}}" src="/images/complete.png"></image>
+        <image class="standard-image" wx:else src="/images/incomplete.png"></image>
+      </view>
+
+      <view class="item-time" catchtap="editContent" data-value="{{item.index}}">
+        <view class="item-time-navi">
+          {{timeStr}}:
+        </view>
+        <view class="item-time-date">
+          {{item.deadline}}
+        </view>
+      </view>
+
+      <view class="item-title" catchtap="editContent" data-value="{{item.index}}">
+        {{item.title}}
+      </view>
+
+      <view class="item-iscomplete" catchtap="deleteItem" data-value="{{item.index}}">
+        <image class="standard-image" wx:if="{{isEditing}}" src="/images/delete.png">
+        </image>
+      </view>
+    </view>
+
+    <view class="add-item" wx:if="{{isEditing}}" catchtap="addItem">
+      <view class="add-item-navi">{{addItemStr}}</view>
+      <view class="add-item-logo">
+        <image class="standard-image" src="/images/add.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

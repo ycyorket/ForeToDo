@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/myForest/myForest",
+    "pages/aboutme/aboutme",
+    "pages/forests/forests",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/newItem/newItem"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "position": "bottom",
+        "pagePath": "pages/myForest/myForest",
+        "text": "我的森林",
+        "iconPath": "images/myForest.png",
+        "selectedIconPath": "images/myForestE.png"
+      },
+      {
+        "position": "bottom",
+        "pagePath": "pages/myForest/myForest",
+        "text": "个人中心",
+        "iconPath": "images/aboutme.png",
+        "selectedIconPath": "images/aboutme.png"
+      }
+    ]
+  }
+}
